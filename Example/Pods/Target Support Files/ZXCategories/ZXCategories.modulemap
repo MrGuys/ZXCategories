@@ -1,0 +1,6 @@
+framework module ZXCategories {
+  umbrella header "ZXCategories-umbrella.h"
+
+  export *
+  module * { export * }
+}

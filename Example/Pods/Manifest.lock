@@ -1,0 +1,16 @@
+PODS:
+  - ZXCategories (0.1.0)
+
+DEPENDENCIES:
+  - ZXCategories (from `../`)
+
+EXTERNAL SOURCES:
+  ZXCategories:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZXCategories: daaf992ccec1662e069476e6986e4101a51c2a03
+
+PODFILE CHECKSUM: fc2a8118b71366b0040cfd26ddbf6b3b4b56d756
+
+COCOAPODS: 1.2.1
