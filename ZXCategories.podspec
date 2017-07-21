@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   #s.source_files = 'ZXCategories/Classes/**/*'
   s.subspec 'UIView' do |c|
-   c.source_files = 'ZXCategories/Classes/UIView/**/*'
+   c.source_files = 'ZXCategories/Classes/UIView/*'
   end
 
 
