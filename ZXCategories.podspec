@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZXCategories'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ZXCategories.'
+  s.summary          = 'ZXCategories.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,24 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'ZXCategories分类扩展'
                        DESC
 
-  s.homepage         = 'https://github.com/Apple/ZXCategories'
+  s.homepage         = 'hhttps://github.com/MrGuys'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Apple' => '376552890@qq.com' }
-  s.source           = { :git => 'https://github.com/Apple/ZXCategories.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MrGuys/ZXCategories.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ZXCategories/Classes/**/*'
-  
+  #s.source_files = 'ZXCategories/Classes/**/*'
+  s.subspec 'UIView' do |c|
+   c.source_files = 'ZXCategories/Classes/UIView/**/*'
+  end
+
+
   # s.resource_bundles = {
   #   'ZXCategories' => ['ZXCategories/Assets/*.png']
   # }
