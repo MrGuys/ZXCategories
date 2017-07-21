@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZXCategories_Example' do
+  pod 'ZXCategories', :path => '../'
+
+  target 'ZXCategories_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
