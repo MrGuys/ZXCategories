@@ -1,14 +1,14 @@
 //
-//  UIView+ZXExtionsion.m
+//  UIView+ZXExtension.h
 //  Pods
 //
 //  Created by Apple on 2017/7/21.
 //
 //
 
-#import "UIView+ZXExtionsion.h"
+#import "UIView+ZXExtension.h"
 
-@implementation UIView (ZXExtionsion)
+@implementation UIView (ZXExtension)
 - (void)setX:(CGFloat)x{
     CGRect frame = self.frame;
     frame.origin.x = x;
@@ -86,5 +86,47 @@
 - (CGFloat)centerY{
     return self.center.y;
 }
+
+
+- (CGFloat)top
+{
+    return  self.y;
+}
+
+- (void)setTop:(CGFloat)top
+{
+    self.y = top;
+}
+
+- (CGFloat)left
+{
+    return  self.x;
+}
+
+- (void)setLeft:(CGFloat)left
+{
+    self.x = left;
+}
+
+- (CGFloat)bottom
+{
+    return  self.y + self.height;
+}
+
+- (void)setBottom:(CGFloat)bottom
+{
+    self.y = bottom - self.height;
+}
+
+- (CGFloat)right
+{
+    return  self.x + self.width;
+}
+
+- (void)setRight:(CGFloat)right
+{
+    self.x = right - self.width;
+}
+
 
 @end
