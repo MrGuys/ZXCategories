@@ -1,9 +1,9 @@
 PODS:
-  - ZXCategories (0.2.4):
-    - ZXCategories/Foundation (= 0.2.4)
-    - ZXCategories/UIKit (= 0.2.4)
-  - ZXCategories/Foundation (0.2.4)
-  - ZXCategories/UIKit (0.2.4)
+  - ZXCategories (0.2.5):
+    - ZXCategories/Foundation (= 0.2.5)
+    - ZXCategories/UIKit (= 0.2.5)
+  - ZXCategories/Foundation (0.2.5)
+  - ZXCategories/UIKit (0.2.5)
 
 DEPENDENCIES:
   - ZXCategories (from `../`)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ZXCategories: ad075eb41d94dcf63ae105d3d718c6f4c91e26d6
+  ZXCategories: 5049e5bd2ee85fcfe6abbbd30d62d64082992928
 
 PODFILE CHECKSUM: fc2a8118b71366b0040cfd26ddbf6b3b4b56d756
 

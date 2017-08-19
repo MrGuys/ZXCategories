@@ -7,7 +7,7 @@
 //
 
 #import "NSData+ZXEncrypt.h"
-
+#import <CommonCrypto/CommonCryptor.h>
 @implementation NSData (ZXEncrypt)
 static void zx_FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSMutableData * ivData)
 {
@@ -20,7 +20,7 @@ static void zx_FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSM
             {
                 [keyData setLength:16];
             }
-            else if (keyLength>16 && keyLength <= 24)
+            else if (keyLength > 16 && keyLength <= 24)
             {
                 [keyData setLength:24];
             }

@@ -8,7 +8,6 @@
 //  加密解密工具 http://tool.chacuo.net/cryptdes
 
 #import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonCryptor.h>
 
 @interface NSData (ZXEncrypt)
 /**
@@ -65,13 +64,6 @@
  *  @return 解密后数据
  */
 - (NSData *)zx_decryptedWith3DESUsingKey:(NSString *)key andIV:(NSData *)iv;
-
-
-- (NSData *)zx_CCCryptData:(NSData *)data
-                 algorithm:(CCAlgorithm)algorithm
-                 operation:(CCOperation)operation
-                       key:(NSString *)key
-                        iv:(NSData *)iv;
 /**
  *  @brief  NSData 转成UTF8 字符串
  *

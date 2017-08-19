@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   s.subspec 'Foundation' do |c|
     c.source_files = 'ZXCategories/Classes/Foundation/**/*'
 # c.public_header_files = 'ZXCategories/Classes/Foundation/Foundation+ZXCategories.h'
-    c.frameworks = 'CommonCrypto'
+#    c.frameworks = 'CommonCrypto'
   end
 
   # s.resource_bundles = {
