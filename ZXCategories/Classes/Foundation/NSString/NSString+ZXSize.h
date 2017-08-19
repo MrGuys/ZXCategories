@@ -22,7 +22,7 @@
  计算文字的高度
  
  @param font 字体
- @param height 约束宽度
+ @param width 约束宽度
  @return 计算得到的高度
  */
 - (CGFloat)zx_heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
@@ -38,7 +38,7 @@
  计算文字的大小
  
  @param font 字体
- @param height 约束宽度
+ @param width 约束宽度
  @return 计算得到的大小
  */
 - (CGSize)zx_sizeWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;

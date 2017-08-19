@@ -21,7 +21,7 @@
 /**
  截图一个view中所有视图
 
- @param myImageRect 裁切范围
+ @param rect 裁切范围
  @param image 需要裁切的图片
  @return 图片
  */
