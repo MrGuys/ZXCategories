@@ -20,11 +20,14 @@ it, simply add the following line to your Podfile:
 pod "ZXCategories"
 ```
 #Usage
+
 ##使用Category集合
+
 ###Foundation
+
 * NSArray
-* NSArray+ZXJson 数组转换json字符串 传给后台经常用
-* NSData
+    * NSArray+ZXJson 数组转换json字符串 传给后台经常用
+    * NSData
 * NSData+ZXBase64 base64相关
 * NSData+ZXEncrypt AES DES 3DES  对称加密 
 * NSData+ZXGzip 压缩 解压
@@ -43,7 +46,9 @@ pod "ZXCategories"
 * NSString+ZXPinyin 汉子转拼音相关
 * NSString+ZXSize 计算字符串占用大小相关
 * NSString+ZXValid 验证手机号 邮箱 身份证等
+
 ###UIKit
+
 * UIColor
 * UIColor+ZXHEX.h 十六进制转颜色相关
 * UIColor+ZXRandom 随机一个颜色
