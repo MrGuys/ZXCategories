@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZXCategories'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = 'ZXCategories.'
 
 # This description is used to generate tags and improve search results.
@@ -33,12 +33,12 @@ Pod::Spec.new do |s|
 #s.source_files = 'ZXCategories/Classes/**/*'
   s.subspec 'UIKit' do |c|
     c.source_files = 'ZXCategories/Classes/UIKit/**/*'
-    c.public_header_files = 'ZXCategories/Classes/UIKit/UIKit+ZXCategories.h'
+#  c.public_header_files = 'ZXCategories/Classes/UIKit/UIKit+ZXCategories.h'
   end
 
   s.subspec 'Foundation' do |c|
     c.source_files = 'ZXCategories/Classes/Foundation/**/*'
-    c.public_header_files = 'ZXCategories/Classes/UIKit/Foundation+ZXCategories.h'
+# c.public_header_files = 'ZXCategories/Classes/Foundation/Foundation+ZXCategories.h'
     c.frameworks = 'CommonCrypto'
   end
 

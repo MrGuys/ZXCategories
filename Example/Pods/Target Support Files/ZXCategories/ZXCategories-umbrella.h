@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "Foundation+ZXCategories.h"
 #import "NSArray+ZXJson.h"
 #import "NSData+ZXBase64.h"
 #import "NSData+ZXEncrypt.h"
@@ -27,7 +26,23 @@
 #import "NSString+ZXPinyin.h"
 #import "NSString+ZXSize.h"
 #import "NSString+ZXValid.h"
-#import "UIKit+ZXCategories.h"
+#import "UIColor+ZXHEX.h"
+#import "UIColor+ZXRandom.h"
+#import "UIImage+ZXCapture.h"
+#import "UIImage+ZXColor.h"
+#import "UIImage+ZXCompress.h"
+#import "UIImage+ZXFileName.h"
+#import "UIImage+ZXOthers.h"
+#import "UIImage+ZXQRCode.h"
+#import "UIImage+ZXRoundedCorner.h"
+#import "UIImage+ZXStretch.h"
+#import "UIImage+ZXTransform.h"
+#import "UINavigationController+ZXStackManager.h"
+#import "UITableViewCell+ZXNib.h"
+#import "UIView+ZXBlockGesture.h"
+#import "UIView+ZXExtension.h"
+#import "UIView+ZXNib.h"
+#import "UIViewController+BackButtonTouched.h"
 
 FOUNDATION_EXPORT double ZXCategoriesVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZXCategoriesVersionString[];

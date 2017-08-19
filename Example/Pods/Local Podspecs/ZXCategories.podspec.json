@@ -21,13 +21,11 @@
   "subspecs": [
     {
       "name": "UIKit",
-      "source_files": "ZXCategories/Classes/UIKit/**/*",
-      "public_header_files": "ZXCategories/Classes/UIKit/UIKit+ZXCategories.h"
+      "source_files": "ZXCategories/Classes/UIKit/**/*"
     },
     {
       "name": "Foundation",
       "source_files": "ZXCategories/Classes/Foundation/**/*",
-      "public_header_files": "ZXCategories/Classes/UIKit/Foundation+ZXCategories.h",
       "frameworks": "CommonCrypto"
     }
   ]
