@@ -136,7 +136,7 @@
 }
 
 + (NSString *)zx_formatYMD:(NSDate *)date {
-    return [NSString stringWithFormat:@"%lu-%02lu-%02lu",[date zx_year],[date zx_month], [date zx_day]];
+    return [NSString stringWithFormat:@"%lu-%02lu-%02lu",(unsigned long)[date zx_year],(unsigned long)[date zx_month], (unsigned long)[date zx_day]];
 }
 
 - (NSUInteger)zx_weeksOfMonth {
