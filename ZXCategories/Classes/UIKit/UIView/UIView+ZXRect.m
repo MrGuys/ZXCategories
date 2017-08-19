@@ -1,14 +1,14 @@
 //
-//  UIView+ZXExtension.h
+//  UIView+ZXRect.h
 //  Pods
 //
 //  Created by Apple on 2017/7/21.
 //
 //
 
-#import "UIView+ZXExtension.h"
+#import "UIView+ZXRect.h"
 
-@implementation UIView (ZXExtension)
+@implementation UIView (ZXRect)
 - (void)setZx_x:(CGFloat)zx_x{
     CGRect frame = self.frame;
     frame.origin.x = zx_x;

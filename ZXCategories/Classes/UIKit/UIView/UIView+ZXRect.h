@@ -1,5 +1,5 @@
 //
-//  UIView+ZXExtension.h
+//  UUIView+ZXRect.h
 //  Pods
 //
 //  Created by Apple on 2017/7/21.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (ZXExtension)
+@interface UIView (ZXRect)
 @property (nonatomic, assign) CGFloat zx_x;
 @property (nonatomic, assign) CGFloat zx_y;
 @property (nonatomic, assign) CGFloat zx_width;

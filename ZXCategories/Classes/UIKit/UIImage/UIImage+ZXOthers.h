@@ -18,11 +18,4 @@
  */
 - (UIImage *)zx_antiAlias;
 
-/**
- *  把颜色变成图片输出
- *
- *  @param color 颜色
- *  @return 转换出的图片
- */
-+ (UIImage *)zx_imageWithColor:(UIColor *)color;
 @end
