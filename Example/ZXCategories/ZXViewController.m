@@ -7,6 +7,8 @@
 //
 
 #import "ZXViewController.h"
+#import <ZXCategories/NSString+ZXEmoji.h>
+#import <ZXCategories/NSString+ZXSize.h>
 @interface ZXViewController ()
 
 @end

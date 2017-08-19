@@ -30,16 +30,16 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-#s.source_files = 'ZXCategories/Classes/**/*'
+# s.source_files = 'ZXCategories/Classes/**/*'
   s.subspec 'UIKit' do |c|
     c.source_files = 'ZXCategories/Classes/UIKit/**/*'
 #  c.public_header_files = 'ZXCategories/Classes/UIKit/UIKit+ZXCategories.h'
   end
 
-  s.subspec 'Foundation' do |c|
-    c.source_files = 'ZXCategories/Classes/Foundation/**/*'
-# c.public_header_files = 'ZXCategories/Classes/Foundation/Foundation+ZXCategories.h'
-#    c.frameworks = 'CommonCrypto'
+  s.subspec 'Foundation' do |d|
+   d.source_files = 'ZXCategories/Classes/Foundation/**/*'
+# d.public_header_files = 'ZXCategories/Classes/Foundation/Foundation+ZXCategories.h'
+#    d.frameworks = 'CommonCrypto'
   end
 
   # s.resource_bundles = {
