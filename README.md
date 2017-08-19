@@ -22,8 +22,6 @@ pod "ZXCategories"
 
 ## Usage
 
-## 使用Category集合
-
 ### Foundation
 
 * NSArray
