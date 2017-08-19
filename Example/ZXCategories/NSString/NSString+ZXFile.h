@@ -29,12 +29,12 @@
  *  @param
  *  @return 是否问doc下文件夹的结果
  */
-- (BOOL)isDirectoryInPath:(NSString * )path;
+- (BOOL)isDirectoryInPath:(NSString *)path;
 
 /**
  *  判断自身文件在doc
  *
  *  @return 返回是否存在
  */
-- (BOOL)fileExistsInPath:(NSString * )path;
+- (BOOL)fileExistsInPath:(NSString *)path;
 @end

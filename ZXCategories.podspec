@@ -30,11 +30,13 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  #s.source_files = 'ZXCategories/Classes/**/*'
-  s.subspec 'UIView' do |c|
-   c.source_files = 'ZXCategories/Classes/UIView/*'
+#s.source_files = 'ZXCategories/Classes/**/*'
+  s.subspec 'UIKit' do |c|
+    c.source_files = 'ZXCategories/Classes/UIKit/**/*'
   end
-
+  s.subspec 'Foundation' do |c|
+    c.source_files = 'ZXCategories/Classes/Foundation/**/*'
+  end
 
   # s.resource_bundles = {
   #   'ZXCategories' => ['ZXCategories/Assets/*.png']

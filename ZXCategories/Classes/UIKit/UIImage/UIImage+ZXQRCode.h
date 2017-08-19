@@ -17,7 +17,7 @@
  *  @return 转换出的图片
  */
 + (UIImage *)zx_creatQRCodeImageWithString:(NSString *)string
-                          withSizeWidth:(CGFloat)width;
+                             withSizeWidth:(CGFloat)width;
 /**
  *  url字符串输出二维码图片
  *
@@ -26,7 +26,7 @@
  *  @return 转换出的图片
  */
 + (UIImage *)zx_creatQRCodeImageWithUrlString:(NSString *)urlString
-                             withSizeWidth:(CGFloat)width;
+                                withSizeWidth:(CGFloat)width;
 /**
  *  url输出二维码图片
  *
@@ -35,5 +35,5 @@
  *  @return 转换出的图片
  */
 + (UIImage *)zx_creatQRCodeImageWithUrl:(NSURL *)url
-                       withSizeWidth:(CGFloat)width;
+                          withSizeWidth:(CGFloat)width;
 @end

@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1843C0781F274A4C008B95F5 /* NSString+ZXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843C0771F274A4C008B95F5 /* NSString+ZXFile.m */; };
-		1843C0911F276E4C008B95F5 /* UIImage+ZXOthers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843C08A1F276E4C008B95F5 /* UIImage+ZXOthers.m */; };
-		1843C0921F276E4C008B95F5 /* UIImage+ZXQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843C08C1F276E4C008B95F5 /* UIImage+ZXQRCode.m */; };
-		1843C0931F276E4C008B95F5 /* UIImage+ZXStretch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843C08E1F276E4C008B95F5 /* UIImage+ZXStretch.m */; };
-		1843C0941F276E4C008B95F5 /* UIImage+ZXTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843C0901F276E4C008B95F5 /* UIImage+ZXTransform.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -46,14 +42,6 @@
 		0FD7FA2874FBD861A014B213 /* Pods-ZXCategories_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXCategories_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXCategories_Example/Pods-ZXCategories_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1843C0761F274A4C008B95F5 /* NSString+ZXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXFile.h"; sourceTree = "<group>"; };
 		1843C0771F274A4C008B95F5 /* NSString+ZXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXFile.m"; sourceTree = "<group>"; };
-		1843C0891F276E4C008B95F5 /* UIImage+ZXOthers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZXOthers.h"; sourceTree = "<group>"; };
-		1843C08A1F276E4C008B95F5 /* UIImage+ZXOthers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZXOthers.m"; sourceTree = "<group>"; };
-		1843C08B1F276E4C008B95F5 /* UIImage+ZXQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZXQRCode.h"; sourceTree = "<group>"; };
-		1843C08C1F276E4C008B95F5 /* UIImage+ZXQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZXQRCode.m"; sourceTree = "<group>"; };
-		1843C08D1F276E4C008B95F5 /* UIImage+ZXStretch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZXStretch.h"; sourceTree = "<group>"; };
-		1843C08E1F276E4C008B95F5 /* UIImage+ZXStretch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZXStretch.m"; sourceTree = "<group>"; };
-		1843C08F1F276E4C008B95F5 /* UIImage+ZXTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZXTransform.h"; sourceTree = "<group>"; };
-		1843C0901F276E4C008B95F5 /* UIImage+ZXTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZXTransform.m"; sourceTree = "<group>"; };
 		3C9A5CF0C98C199ADAF5D6D6 /* Pods_ZXCategories_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXCategories_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ZXCategories_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXCategories_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,21 +107,6 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		1843C0881F276E4C008B95F5 /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-				1843C0891F276E4C008B95F5 /* UIImage+ZXOthers.h */,
-				1843C08A1F276E4C008B95F5 /* UIImage+ZXOthers.m */,
-				1843C08B1F276E4C008B95F5 /* UIImage+ZXQRCode.h */,
-				1843C08C1F276E4C008B95F5 /* UIImage+ZXQRCode.m */,
-				1843C08D1F276E4C008B95F5 /* UIImage+ZXStretch.h */,
-				1843C08E1F276E4C008B95F5 /* UIImage+ZXStretch.m */,
-				1843C08F1F276E4C008B95F5 /* UIImage+ZXTransform.h */,
-				1843C0901F276E4C008B95F5 /* UIImage+ZXTransform.m */,
-			);
-			path = UIImage;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +144,6 @@
 		6003F593195388D20070C39A /* Example for ZXCategories */ = {
 			isa = PBXGroup;
 			children = (
-				1843C0881F276E4C008B95F5 /* UIImage */,
 				1843C0751F2749FC008B95F5 /* NSString */,
 				6003F59C195388D20070C39A /* ZXAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZXAppDelegate.m */,
@@ -436,13 +408,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* ZXAppDelegate.m in Sources */,
-				1843C0921F276E4C008B95F5 /* UIImage+ZXQRCode.m in Sources */,
 				1843C0781F274A4C008B95F5 /* NSString+ZXFile.m in Sources */,
 				6003F5A7195388D20070C39A /* ZXViewController.m in Sources */,
-				1843C0911F276E4C008B95F5 /* UIImage+ZXOthers.m in Sources */,
-				1843C0931F276E4C008B95F5 /* UIImage+ZXStretch.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				1843C0941F276E4C008B95F5 /* UIImage+ZXTransform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@
 /**
  *  拉伸图片，四个角不变形
  *
- *  @param imgName 图片名称
+ *  @param imageName 图片名称
  *  @return 拉伸过的图片
  */
 + (UIImage *)zx_stretchImage:(NSString *)imageName;

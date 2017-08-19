@@ -1,6 +1,6 @@
 {
   "name": "ZXCategories",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "ZXCategories.",
   "description": "'ZXCategories分类扩展'",
   "homepage": "hhttps://github.com/MrGuys",
@@ -13,15 +13,19 @@
   },
   "source": {
     "git": "https://github.com/MrGuys/ZXCategories.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
   },
   "subspecs": [
     {
-      "name": "UIView",
-      "source_files": "ZXCategories/Classes/UIView/**/*"
+      "name": "UIKit",
+      "source_files": "ZXCategories/Classes/UIKit/**/*"
+    },
+    {
+      "name": "Foundation",
+      "source_files": "ZXCategories/Classes/Foundation/**/*"
     }
   ]
 }
