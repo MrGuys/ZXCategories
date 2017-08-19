@@ -80,7 +80,7 @@ static void zx_FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSM
  *
  *  @return data
  */
-- (NSData*)zx_encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
+- (NSData*)zx_encryptedWithAESUsingKey:(NSString *)key andIV:(NSData *)iv {
     return [self zx_CCCryptData:self algorithm:kCCAlgorithmAES128 operation:kCCEncrypt key:key iv:iv];
 }
 /**
@@ -91,7 +91,7 @@ static void zx_FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSM
  *
  *  @return 解密后数据
  */
-- (NSData*)zx_decryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
+- (NSData*)zx_decryptedWithAESUsingKey:(NSString *)key andIV:(NSData *)iv {
     return [self zx_CCCryptData:self algorithm:kCCAlgorithmAES128 operation:kCCDecrypt key:key iv:iv];
 }
 /**
@@ -102,7 +102,7 @@ static void zx_FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSM
  *
  *  @return data
  */
-- (NSData*)zx_encryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv {
+- (NSData*)zx_encryptedWith3DESUsingKey:(NSString *)key andIV:(NSData *)iv {
     return [self zx_CCCryptData:self algorithm:kCCAlgorithm3DES operation:kCCEncrypt key:key iv:iv];
 }
 /**
@@ -113,7 +113,7 @@ static void zx_FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSM
  *
  *  @return 解密后数据
  */
-- (NSData*)zx_decryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv {
+- (NSData*)zx_decryptedWith3DESUsingKey:(NSString *)key andIV:(NSData *)iv {
     return [self zx_CCCryptData:self algorithm:kCCAlgorithm3DES operation:kCCDecrypt key:key iv:iv];
 }
 
@@ -125,7 +125,7 @@ static void zx_FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSM
  *
  *  @return data
  */
-- (NSData *)zx_encryptedWithDESUsingKey:(NSString*)key andIV:(NSData*)iv{
+- (NSData *)zx_encryptedWithDESUsingKey:(NSString *)key andIV:(NSData *)iv{
     return [self zx_CCCryptData:self algorithm:kCCAlgorithmDES operation:kCCEncrypt key:key iv:iv];
 }
 /**
@@ -136,7 +136,7 @@ static void zx_FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSM
  *
  *  @return 解密后数据
  */
-- (NSData *)zx_decryptedWithDESUsingKey:(NSString*)key andIV:(NSData*)iv{
+- (NSData *)zx_decryptedWithDESUsingKey:(NSString *)key andIV:(NSData *)iv{
     return [self zx_CCCryptData:self algorithm:kCCAlgorithmDES operation:kCCDecrypt key:key iv:iv];
 }
 - (NSData *)zx_CCCryptData:(NSData *)data

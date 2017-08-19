@@ -36,6 +36,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'Foundation' do |c|
     c.source_files = 'ZXCategories/Classes/Foundation/**/*'
+    c.frameworks = 'CommonCrypto'
   end
 
   # s.resource_bundles = {

@@ -23,5 +23,5 @@
 
  @return 转化后的字符串
  */
-- (NSString *)urlDecode;
+- (NSString *)zx_urlDecode;
 @end
