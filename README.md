@@ -22,9 +22,9 @@ pod "ZXCategories"
 
 ## Usage
 
-##使用Category集合
+## 使用Category集合
 
-###Foundation
+### Foundation
 
 * NSArray
     * NSArray+ZXJson 数组转换json字符串 传给后台经常用
@@ -48,7 +48,7 @@ pod "ZXCategories"
     * NSString+ZXSize 计算字符串占用大小相关
     * NSString+ZXValid 验证手机号 邮箱 身份证等
 
- ###UIKit
+ ### UIKit
 
 * UIColor
     * UIColor+ZXHEX.h 十六进制转颜色相关
