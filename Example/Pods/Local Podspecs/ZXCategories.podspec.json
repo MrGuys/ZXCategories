@@ -1,6 +1,6 @@
 {
   "name": "ZXCategories",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "summary": "ZXCategories.",
   "description": "'ZXCategories分类扩展'",
   "homepage": "hhttps://github.com/MrGuys",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MrGuys/ZXCategories.git",
-    "tag": "0.2.0"
+    "tag": "0.2.4"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,11 +21,14 @@
   "subspecs": [
     {
       "name": "UIKit",
-      "source_files": "ZXCategories/Classes/UIKit/**/*"
+      "source_files": "ZXCategories/Classes/UIKit/**/*",
+      "public_header_files": "ZXCategories/Classes/UIKit/UIKit+ZXCategories.h"
     },
     {
       "name": "Foundation",
-      "source_files": "ZXCategories/Classes/Foundation/**/*"
+      "source_files": "ZXCategories/Classes/Foundation/**/*",
+      "public_header_files": "ZXCategories/Classes/UIKit/Foundation+ZXCategories.h",
+      "frameworks": "CommonCrypto"
     }
   ]
 }

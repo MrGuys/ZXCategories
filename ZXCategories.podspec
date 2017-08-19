@@ -33,11 +33,12 @@ Pod::Spec.new do |s|
 #s.source_files = 'ZXCategories/Classes/**/*'
   s.subspec 'UIKit' do |c|
     c.source_files = 'ZXCategories/Classes/UIKit/**/*'
-    c.public_header_files = ZXCategories/Classes/UIKit/UIKit+ZXCategories'
+    c.public_header_files = 'ZXCategories/Classes/UIKit/UIKit+ZXCategories.h'
   end
+
   s.subspec 'Foundation' do |c|
     c.source_files = 'ZXCategories/Classes/Foundation/**/*'
-    c.public_header_files = ZXCategories/Classes/UIKit/UIKit+ZXCategories'
+    c.public_header_files = 'ZXCategories/Classes/UIKit/Foundation+ZXCategories.h'
     c.frameworks = 'CommonCrypto'
   end
 
