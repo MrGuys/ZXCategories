@@ -17,6 +17,8 @@
 		11348EC57B2F618499C09B2D78BEA433 /* UIView+ZXBlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DF6F5E22E4B2D78D07E8AF36EA749C /* UIView+ZXBlockGesture.m */; };
 		114AC17AE14D346369D2282602E1EEEE /* NSData+ZXHash.m in Sources */ = {isa = PBXBuildFile; fileRef = DF47E1B67273EB4B5C80CAF763E12904 /* NSData+ZXHash.m */; };
 		156327B49A984E62141D8793D437D3FB /* UIView+ZXNib.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E1A18EEAB4EC86586CE6BC75FA20B4 /* UIView+ZXNib.m */; };
+		18EA45701F4B1EE300E94131 /* UIViewController+ZXStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 18EA456E1F4B1EE300E94131 /* UIViewController+ZXStoryboard.h */; };
+		18EA45711F4B1EE300E94131 /* UIViewController+ZXStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA456F1F4B1EE300E94131 /* UIViewController+ZXStoryboard.m */; };
 		1913B031BB9C1AF3C783BBABA56419B1 /* NSDate+ZXExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6658B974B71ADE1D3B65D99C6EDE3330 /* NSDate+ZXExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24C5D437012C53A1B93D0CB3C415AD74 /* UIImage+ZXFileName.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7155A0AA8A465914BB9477D00D5397 /* UIImage+ZXFileName.m */; };
 		26B29148CA49BD121684B4515EB6EDE4 /* UITableViewCell+ZXNib.h in Headers */ = {isa = PBXBuildFile; fileRef = B8EC1B7BA13DB2F2575BB08D00402500 /* UITableViewCell+ZXNib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,6 +105,8 @@
 		1416D12C6FA2021F0DAB438A02A46100 /* NSString+ZXSize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXSize.m"; sourceTree = "<group>"; };
 		1628B2E1870A8562FE97E9467E7B346A /* NSString+ZXSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXSize.h"; sourceTree = "<group>"; };
 		18528DC48B2187BF33CB0BCFD6F8095D /* NSString+ZXPinyin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXPinyin.h"; sourceTree = "<group>"; };
+		18EA456E1F4B1EE300E94131 /* UIViewController+ZXStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZXStoryboard.h"; sourceTree = "<group>"; };
+		18EA456F1F4B1EE300E94131 /* UIViewController+ZXStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZXStoryboard.m"; sourceTree = "<group>"; };
 		1931B5354CFF6E00CBB484C8314B93C6 /* ZXCategories.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZXCategories.modulemap; sourceTree = "<group>"; };
 		1AF44953F8ECED79E7AB23B60B5E564A /* Pods-ZXCategories_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXCategories_Example-dummy.m"; sourceTree = "<group>"; };
 		1B6D1443AD917B83EA313F4F2F7C4469 /* NSData+ZXGzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+ZXGzip.h"; sourceTree = "<group>"; };
@@ -375,6 +379,8 @@
 			children = (
 				93B8F536A85A0C036879E7CFC74DFCE3 /* UIViewController+BackButtonTouched.h */,
 				44E96FBDD67D5EF298977A039E1909D5 /* UIViewController+BackButtonTouched.m */,
+				18EA456E1F4B1EE300E94131 /* UIViewController+ZXStoryboard.h */,
+				18EA456F1F4B1EE300E94131 /* UIViewController+ZXStoryboard.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EA45701F4B1EE300E94131 /* UIViewController+ZXStoryboard.h in Headers */,
 				75F015186013A393E1D803E75047F188 /* Pods-ZXCategories_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,6 +758,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				910E22B3E03F7A016017FA2156AD1591 /* Pods-ZXCategories_Example-dummy.m in Sources */,
+				18EA45711F4B1EE300E94131 /* UIViewController+ZXStoryboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

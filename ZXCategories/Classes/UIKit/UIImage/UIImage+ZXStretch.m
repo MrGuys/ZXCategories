@@ -2,7 +2,7 @@
 //  UIImage+ZXStretch.m
 //  ZXCategories
 //
-//  Created by Apple on 2017/7/25.
+//  Created by zhouXian on 2017/7/25.
 //  Copyright © 2017年 Apple. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  NSData+ZXEncrypt.h
 //  Categories
 //
-//  Created by xiaolang on 2017/8/16.
+//  Created by zhouXian on 2017/8/16.
 //  Copyright © 2017年 zhou. All rights reserved.
 //  AES DES 3DES  对称加密
 //  加密解密工具 http://tool.chacuo.net/cryptdes

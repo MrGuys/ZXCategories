@@ -2,7 +2,7 @@
 //  NSDate+ZXExtension.h
 //  Categories
 //
-//  Created by xiaolang on 2017/8/18.
+//  Created by zhouXian on 2017/8/18.
 //  Copyright © 2017年 zhou. All rights reserved.
 //
 
@@ -184,11 +184,7 @@
  */
 + (NSString *)zx_monthWithMonthNumber:(NSInteger)month;
 
-
-
-
-
-/**po
+/**
  * 获取指定月份的天数
  */
 - (NSUInteger)zx_daysInMonth:(NSUInteger)month;
