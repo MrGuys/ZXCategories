@@ -10,10 +10,10 @@
 
 @implementation UIViewController (ZXStoryboard)
 
-+ (instancetype)loadFromClassNameIdentifierWithStoryboardName:(NSString *)name{
-    return [self loadFromStoryboradName:name identifier:NSStringFromClass([self class])];
++ (instancetype)zx_loadFromClassNameIdentifierWithStoryboardName:(NSString *)name{
+    return [self zx_loadFromStoryboradName:name identifier:NSStringFromClass([self class])];
 }
-+ (instancetype)loadFromStoryboradName:(NSString *)name identifier:(NSString *)identifeir{
++ (instancetype)zx_loadFromStoryboradName:(NSString *)name identifier:(NSString *)identifeir{
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:nil];
     return [storyboard instantiateViewControllerWithIdentifier:identifeir];
 }
