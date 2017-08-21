@@ -67,11 +67,11 @@ pod "ZXCategories"
     * UITableViewCell+ZXNib 获取cell的nib
 * UIView
     * UIView+ZXBlockGesture 快速添加手势block
-    * UIView+ZXRect frame常用 比如frame.x
+    * UIView+ZXLayout frame快捷封装 比如view.x
     * UIView+ZXNib 从nib加载相关
 * UIViewController
-    * UIViewController+BackButtonTouched 使用block替换返回按钮的事件
-
+    * UIViewController+ZXBackButtonTouched 使用block替换返回按钮的事件
+    * UIViewController+ZXStoryboard 从storyboard加载控制器
 ## Author
 
 Apple, 376552890@qq.com

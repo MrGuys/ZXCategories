@@ -1,16 +1,16 @@
 //
-//  UIViewController+BackButtonTouched.m
+//  UIViewController+ZXBackButtonTouched.m
 //  Categories
 //
 //  Created by zhouXian on 2017/8/16.
 //  Copyright © 2017年 zhou. All rights reserved.
 //
 
-#import "UIViewController+BackButtonTouched.h"
+#import "UIViewController+ZXBackButtonTouched.h"
 #import <objc/runtime.h>
 static const void *ZXBackButtonHandlerKey = &ZXBackButtonHandlerKey;
 
-@implementation UIViewController (BackButtonTouched)
+@implementation UIViewController (ZXBackButtonTouched)
 -(void)zx_backButtonTouched:(ZXBackButtonHandler)backButtonHandler{
     objc_setAssociatedObject(self, ZXBackButtonHandlerKey, backButtonHandler, OBJC_ASSOCIATION_COPY);
 }

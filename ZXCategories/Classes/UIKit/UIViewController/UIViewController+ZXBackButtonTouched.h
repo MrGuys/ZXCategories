@@ -1,5 +1,5 @@
 //
-//  UIViewController+BackButtonTouched.h
+//  UIViewController+ZXBackButtonTouched.h
 //  Categories
 //
 //  Created by zhouXian on 2017/8/16.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 typedef void (^ZXBackButtonHandler)(UIViewController *vc);
 
-@interface UIViewController (BackButtonTouched)
+@interface UIViewController (ZXBackButtonTouched)
 
 /**
  返回按钮回调

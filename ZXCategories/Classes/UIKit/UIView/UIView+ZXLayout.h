@@ -1,5 +1,5 @@
 //
-//  UUIView+ZXRect.h
+//  UUIView+ZXLayout.h
 //  Pods
 //
 //  Created by zhouXian on 2017/7/21.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (ZXRect)
+@interface UIView (ZXLayout)
 @property (nonatomic, assign) CGFloat zx_x;
 @property (nonatomic, assign) CGFloat zx_y;
 @property (nonatomic, assign) CGFloat zx_width;

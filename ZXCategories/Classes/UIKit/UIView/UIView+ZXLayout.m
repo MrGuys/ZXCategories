@@ -1,14 +1,14 @@
 //
-//  UIView+ZXRect.h
+//  UIView+ZXLayout.h
 //  Pods
 //
 //  Created by zhouXian on 2017/7/21.
 //
 //
 
-#import "UIView+ZXRect.h"
+#import "UIView+ZXLayout.h"
 
-@implementation UIView (ZXRect)
+@implementation UIView (ZXLayout)
 - (void)setZx_x:(CGFloat)zx_x{
     CGRect frame = self.frame;
     frame.origin.x = zx_x;
