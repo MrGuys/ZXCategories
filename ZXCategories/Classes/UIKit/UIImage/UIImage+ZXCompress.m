@@ -37,11 +37,28 @@
     }
     return data;
 }
+- (UIImage *)zx_imageWithNewSize:(CGSize)size{
+    // 创建一个bitmap的context
+    // 并把它设置成为当前正在使用的context    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    //第一个参数，size，是缩放图片的尺寸，第二个参数，isOpaque 是用来决定透明通道是否被渲染。对没有透明度的图片设置这个参数为false，可能导致图片有粉红色调。第三个参数scale是显示缩放系数。当设置成0.0，主屏幕的缩放系数将被使用，对视网膜屏显示是2.0或者更高
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
 
+    [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    // 从当前context中创建一个改变大小后的图片
+
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    // 使当前的context出堆栈
+
+    UIGraphicsEndImageContext();
+    // 返回新的改变大小后的图片
+
+    return newImage;
+}
 + (UIImage *)zx_resizeImage:(UIImage *)image newSize:(CGSize)newSize;
 {
     
-    UIGraphicsBeginImageContext(newSize);
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
     [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -49,6 +66,8 @@
     
     return newImage;
 }
+
+
 
 + (CGSize)zx_scaleImage:(UIImage *)image length:(CGFloat)imageLength{
     

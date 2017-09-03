@@ -7,7 +7,7 @@
 //
 
 #import "UIImage+ZXRoundedCorner.h"
-
+#import "UIImage+ZXAlpha.h"
 @implementation UIImage (ZXRoundedCorner)
 // Creates a copy of this image with rounded corners
 // If borderSize is non-zero, a transparent border of the given size will also be added
@@ -89,52 +89,6 @@
     CGContextClosePath(context);
     CGContextRestoreGState(context);
 }
-/**
- *  @brief  如果没有alpha通道 增加alpha通道
- *
- *  @return 如果没有alpha通道 增加alpha通道
- */
-- (UIImage *)zx_imageWithAlpha {
-    if ([self zx_hasAlpha]) {
-        return self;
-    }
-    
-    CGImageRef imageRef = self.CGImage;
-    size_t width = CGImageGetWidth(imageRef);
-    size_t height = CGImageGetHeight(imageRef);
-    
-    // The bitsPerComponent and bitmapInfo values are hard-coded to prevent an "unsupported parameter combination" error
-    CGContextRef offscreenContext = CGBitmapContextCreate(NULL,
-                                                          width,
-                                                          height,
-                                                          8,
-                                                          0,
-                                                          CGImageGetColorSpace(imageRef),
-                                                          kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
-    
-    // Draw the image into the context and retrieve the new image, which will now have an alpha layer
-    CGContextDrawImage(offscreenContext, CGRectMake(0, 0, width, height), imageRef);
-    CGImageRef imageRefWithAlpha = CGBitmapContextCreateImage(offscreenContext);
-    UIImage *imageWithAlpha = [UIImage imageWithCGImage:imageRefWithAlpha];
-    
-    // Clean up
-    CGContextRelease(offscreenContext);
-    CGImageRelease(imageRefWithAlpha);
-    
-    return imageWithAlpha;
-}
 
-/**
- *  @brief  是否有alpha通道
- *
- *  @return 是否有alpha通道
- */
-- (BOOL)zx_hasAlpha {
-    CGImageAlphaInfo alpha = CGImageGetAlphaInfo(self.CGImage);
-    return (alpha == kCGImageAlphaFirst ||
-            alpha == kCGImageAlphaLast ||
-            alpha == kCGImageAlphaPremultipliedFirst ||
-            alpha == kCGImageAlphaPremultipliedLast);
-}
 
 @end

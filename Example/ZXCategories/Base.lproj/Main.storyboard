@@ -20,8 +20,20 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jtC-Ie-JHu">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jtC-Ie-JHu" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="Rwt-Pi-cIO"/>
+                            <constraint firstItem="jtC-Ie-JHu" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="S4Y-7x-Bbv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="jtC-Ie-JHu" id="Joi-7K-emD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

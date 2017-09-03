@@ -14,7 +14,7 @@
  高效圆角
 
  @param cornerSize 圆角大小
- @param borderWidth 四周留边大小
+ @param borderWidth 四周透明留边大小。如果为0，不添加，如果有数值，用于解决旋转动画的锯齿bug
  @return 返回拿到的image
  */
 - (UIImage *)zx_roundedCornerImage:(NSInteger)cornerSize borderWidth:(NSInteger)borderWidth;
