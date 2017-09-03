@@ -52,12 +52,14 @@ pod "ZXCategories"
     * UIColor+ZXHEX.h 十六进制转颜色相关
     * UIColor+ZXRandom 随机一个颜色
 * UIImage
+    * UIImage+Alpha 判断图片是否有透明通道及添加透明通道(有些没有透明通道的图片使用Quartz 2D相关方法会崩溃)
     * UIImage+ZXCapture 截图相关
     * UIImage+ZXColor 颜色转Image
-    * UIImage+ZXCompress 图片压缩
+    * UIImage+ZXCompress 图片压缩 使用UIGraphicsBeginImageContextWithOptions相关API
     * UIImage+ZXFileName 提供路径加载图片 不缓存图片
     * UIImage+ZXOthers 缩放动画抗锯齿
     * UIImage+ZXQRCode 二维码相关
+    * UIImage+ZXResize 改变图片大小 使用Quartz 2D相关API
     * UIImage+ZXRoundedCorner 高性能圆角图片
     * UIImage+ZXStretch 图片拉伸相关
     * UIImage+ZXTransform 缩放 旋转
