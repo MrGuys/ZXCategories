@@ -1,6 +1,6 @@
 {
   "name": "ZXCategories",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "summary": "ZXCategories.",
   "description": "'ZXCategories分类扩展'",
   "homepage": "hhttps://github.com/MrGuys",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MrGuys/ZXCategories.git",
-    "tag": "0.3.0"
+    "tag": "0.3.2"
   },
   "platforms": {
     "ios": "8.0"

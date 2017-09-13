@@ -79,6 +79,13 @@
  *  最后是8个数字(\d{8})
  */
 @interface NSString (ZXValid)
+
+/**
+ nil或者空字符串或者(null)都会返回NO
+
+ @return 返回结果
+ */
+- (BOOL)zx_isEmpty;
 /**
  *  手机号码的有效性:分电信、联通、移动和小灵通
  */
