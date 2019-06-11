@@ -24,7 +24,18 @@
     UIImage *newImage = [image zx_resizedImage:CGSizeMake(100, 100) interpolationQuality:kCGInterpolationLow];
     self.imageView.image = newImage;
     
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"test" forState:UIControlStateNormal];
+    [btn sizeToFit];
+    btn.center = CGPointMake(20, 30);
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(aaa) forControlEvents:UIControlEventTouchUpInside];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)aaa {
+    NSLog(@"test");
 }
 
 - (void)didReceiveMemoryWarning
