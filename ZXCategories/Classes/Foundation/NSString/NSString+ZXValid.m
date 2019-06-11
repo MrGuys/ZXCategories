@@ -17,7 +17,7 @@
 
 #pragma mark -
 - (BOOL)zx_isEmpty{
-    return ([self isEqualToString:@""] || self == nil || [self isEqualToString:@"(null)"]) ? NO :YES;
+    return ([self isEqualToString:@""] || self == nil || [self isEqualToString:@"(null)"]) ? YES : NO;
 }
 //手机号分服务商
 - (BOOL)zx_isMobileNumberClassification{

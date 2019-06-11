@@ -10,6 +10,6 @@
 
 @implementation NSArray (ZXEmpty)
 - (BOOL)zx_isEmpty{
-    return (self == nil) || ([self count] == 0) ? NO : YES;
+    return (self == nil) || ([self count] == 0) ? YES : NO;
 }
 @end
