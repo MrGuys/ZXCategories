@@ -27,6 +27,7 @@
 #import "NSString+ZXPinyin.h"
 #import "NSString+ZXSize.h"
 #import "NSString+ZXValid.h"
+#import "UIButton+ZXInterval.h"
 #import "UIColor+ZXHEX.h"
 #import "UIColor+ZXRandom.h"
 #import "UIImage+ZXAlpha.h"
